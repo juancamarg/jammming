@@ -164,7 +164,9 @@ function App() {
           let list = [];
           songList.map(item => list.push(item.uri));
           createPlaylist(list);
-          alert('Playlist added successfully')
+          alert('Playlist added successfully');
+          setSongList([]);
+          setPlaylistN("");  
         }
 
       }
