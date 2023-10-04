@@ -158,10 +158,15 @@ function App() {
       if(token === undefined){
         alert("Please login first")
       }else{
-        let list = [];
-        songList.map(item => list.push(item.uri));
-        createPlaylist(list);
-        alert('Playlist added successfully')
+        if(songList.length === 0){
+          alert("Please add a song to the playlist")
+        }else{
+          let list = [];
+          songList.map(item => list.push(item.uri));
+          createPlaylist(list);
+          alert('Playlist added successfully')
+        }
+
       }
     }
   }
@@ -179,7 +184,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Jammings</h1>
+      <h1>Jammming</h1>
       <button onClick={login} className='login'>Login with Spotify </button>
       <div className='container'>
       <div className='searchContainer'>
