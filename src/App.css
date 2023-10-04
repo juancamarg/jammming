@@ -1,21 +1,40 @@
 .App {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+  font-family: 'Belanosima', sans-serif;
+  font-family: 'Karla', sans-serif;
+  
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
+  display: flex;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+  margin: 10px;
+  justify-content: space-around;
 
-h1 {
-  color: #333;
+}
+.searchContainer {
+  width: 50%;
+  background-color: rgba(15, 14, 14, 0.5); 
+}
+.playListContainer {
+  margin-left: 10%;
+  width: 50%;
+  margin-right: 2%;
+  background-color: rgba(15, 14, 14, 0.5); 
+}
+h2{
+  color: aliceblue;
+  margin-top: 10;
   text-align: center;
+}
+h1 {
+  color: #f1e8e8;
+  text-align: center;
+  font-style: italic;
+  font-size: 60px;
+  font-family: Arial, sans-serif;
+
 }
 .login {
   background-color: #22b435;
@@ -23,12 +42,13 @@ h1 {
 /* Botones */
 button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #4092cc;
   color: #fff;
   border: none;
   cursor: pointer;
   font-size: 16px;
   border-radius: 4px;
+  margin: 10px;
 }
 
 button:hover {
@@ -42,17 +62,12 @@ form {
 
 /* Input de texto */
 input[type="text"] {
-  width: 100%;
+  width: 80%;
   padding: 10px;
+  margin-left: 10%;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #7a5c5c;
   border-radius: 4px;
-}
-
-/* Mensaje de error */
-.error-message {
-  color: red;
-  margin-top: 5px;
 }
 
 /* Resultados */
@@ -68,40 +83,7 @@ ul {
 
 li {
   margin-bottom: 10px;
+  color: #f1e8e8;
+  margin-left: 4%;
 }
 
-/* Estilos para enlaces */
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Pie de página */
-footer {
-  text-align: center;
-  padding: 10px 0;
-  background-color: #333;
-  color: #fff;
-}
-
-/* Estilo para la barra de navegación (si la tienes) */
-.navbar {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-}
-
-/* Estilo para enlaces de navegación */
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 20px;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}

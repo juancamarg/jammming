@@ -96,6 +96,7 @@ function App() {
       });
       const userData = await userResponse.json();
       const userId = userData.id;
+      console.log(userId);
   
       // Create a new playlist
       const createPlaylistResponse = await fetch(`https://api.spotify.com/v1/users/${userId}/playlists`, {
@@ -120,7 +121,7 @@ function App() {
           'Authorization': `Bearer ${token}`
         }
       });
-      const addedTracksData = await addTracksResponse.json();  
+      return await addTracksResponse.json();  
     } catch (error) {
       console.error('Error al crear la playlist y agregar pistas:', error);
     }
@@ -128,8 +129,17 @@ function App() {
   
 // Function to handle the Search
   function handleSearch(e){
-    e.preventDefault();
-    browser();
+    if(token == null){
+      alert("Please login first")
+    }else{
+      if(search === "" ){
+        alert("Please insert a word to search")
+      }
+      else{
+        e.preventDefault();
+        browser();
+      }
+    }
   }
 
 // Function to handle the addition of song to the playlist 
@@ -145,9 +155,14 @@ function App() {
     if (playlistN === ""){
       alert("Please insert a playlist Name")
     }else{
-      let list = [];
-      songList.map(item => list.push(item.uri));
-      createPlaylist(list);
+      if(token === undefined){
+        alert("Please login first")
+      }else{
+        let list = [];
+        songList.map(item => list.push(item.uri));
+        createPlaylist(list);
+        alert('Playlist added successfully')
+      }
     }
   }
 
@@ -165,9 +180,10 @@ function App() {
   return (
     <div className="App">
       <h1>Jammings</h1>
-      <button onClick={login} className='login'>Login to Spotify</button>
+      <button onClick={login} className='login'>Login with Spotify </button>
       <div className='container'>
-      <div>
+      <div className='searchContainer'>
+        <h2>Search a Song !!</h2>
         <SearchBar value = {search} onChange ={e => setSearch(e.target.value)} />
         <SearchResults onClick={handleSearch}/>
         <h2>RESULTS</h2>
@@ -177,15 +193,15 @@ function App() {
         )}
       </ul>
       </div>
-      <div>
+      <div className='playListContainer'>
         <h2>New Playlist</h2>
         <PlayListName value ={playlistN} onChange= {e => setPlaylistN(e.target.value)} />
+        <button onClick={handleAdd}>Save Playlist</button>
         <ul>
         {songList.map(item =>
             <PlaylistItem name = {item.name} value={item.name} onClick = {handleDelete}/>
         )}
-        </ul>
-        <button onClick={handleAdd}>Save playlist</button> 
+        </ul> 
       </div>
       </div>
     </div>
