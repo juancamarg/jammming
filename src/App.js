@@ -36,6 +36,7 @@ function App() {
 
     window.location.href = authorizationUrl;
   }
+
 //-------------------------------------------------------------
   // Function to search a list of tracks by specific word.
 //-------------------------------------------------------------  
