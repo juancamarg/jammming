@@ -13,7 +13,7 @@ function App() {
 //-------------------------------------------------------------    
   const clientId = "389ce1fffa864b00944cecf8ecba15f5";
   const clientSecret = "e3a5f7dd21d4452b82f3dc9c5a69ad93";
-  const redirectUri = 'https://bucolic-platypus-8a3c25.netlify.app/'; // 
+  const redirectUri = 'https://charming-centaur-60d721.netlify.app/'; // 
   const scopes = 'user-read-private user-read-email playlist-modify-public playlist-modify-private';
 //------------------------------------------------
   // Hooks to use
