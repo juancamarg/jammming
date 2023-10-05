@@ -44,6 +44,14 @@ If you're interested in contributing to this project or running it locally for d
 
 5. Access the application in your browser at `http://localhost:3000`.
 
+## Technologies
+
+* HTML
+* CSS
+* JavaScript
+* React
+* HTTP Requests and Responses
+
 ## Feedback and Issues
 
 If you have any feedback, feature requests, or encounter any issues while using Spotify Playlist Creator, please don't hesitate to [open an issue](https://github.com/juancamarg/jammming) on GitHub. Your input is valuable and will help us improve the application.
