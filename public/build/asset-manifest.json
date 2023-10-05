@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/jammming/static/css/main.627f9507.css",
+    "main.js": "/jammming/static/js/main.f1203bb1.js",
+    "static/media/pexels-eberhard-grossgasteiger-1287142.jpg": "/jammming/static/media/pexels-eberhard-grossgasteiger-1287142.910b3f8f9da065d5d07b.jpg",
+    "index.html": "/jammming/index.html",
+    "main.627f9507.css.map": "/jammming/static/css/main.627f9507.css.map",
+    "main.f1203bb1.js.map": "/jammming/static/js/main.f1203bb1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.627f9507.css",
+    "static/js/main.f1203bb1.js"
+  ]
+}
