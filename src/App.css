@@ -40,7 +40,7 @@ h1 {
 .login {
   background-color: #22b435;
 }
-/* Botones */
+/* button */
 button {
   padding: 10px 20px;
   background-color: #4092cc;
@@ -56,28 +56,22 @@ button:hover {
   background-color: #0056b3;
 }
 
-/* Formulario */
-form {
-  margin-top: 20px;
-}
 
-/* Input de texto */
+/* Input Text */
 input[type="text"] {
   width: 80%;
-  padding: 10px;
-  margin-left: 10%;
-  margin-bottom: 10px;
+  margin-left: 5%;
+  margin-bottom: 5%;
   border: 1px solid #7a5c5c;
   border-radius: 4px;
   font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
-/* Resultados */
-.results {
-  margin-top: 20px;
-}
 
-/* Lista de resultados */
+/* List of results */
 ul {
   list-style-type: none;
   padding: 0;
