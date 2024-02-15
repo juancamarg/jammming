@@ -24,7 +24,7 @@ Spotify Playlist Creator is a web application that allows you to effortlessly cr
 
 To use Spotify Playlist Creator, follow these steps:
 
-1. Visit the website: 
+1. Visit the website: https://charming-centaur-60d721.netlify.app/
 
 2. Click the "Log In with Spotify" button to authenticate with your Spotify account.
 
